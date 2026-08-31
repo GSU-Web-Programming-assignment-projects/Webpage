@@ -1,41 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ===== PAGE INFORMATION: character set, mobile scaling, and browser tab title ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to page 3</title>
+    <title>Page 3 - The Final Boss</title>
+
+    <!-- ===== STYLE SECTION: all the CSS rules that control how this page looks ===== -->
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: #f0f0f0;
-        padding: 20px;
-        text-align: center;
-    }
-    nav {
-        margin-bottom: 20px;
-    }
-    nav a {
-        margin-right: 10px;
-        text-decoration: none;
-        color: #333;
-    }
+        /* Base look of the whole page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f9;
+        }
+
+        /* The header bar that holds the navigation and the main title */
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Spacing under the navigation menu */
+        nav {
+            margin-bottom: 20px;
+        }
+
+        /* How each navigation link looks */
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Turn the link a different color when the mouse hovers over it */
+        nav a:hover {
+            color: #008b8b;
+            text-decoration: underline;
+        }
+
+        /* Main page heading color */
+        h1 {
+            color: #20b2aa;
+        }
+
+        /* Smaller headings used above the list and the table */
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #20b2aa;
+            padding-bottom: 5px;
+        }
+
+        /* The main content area below the header */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* PARAGRAPH STYLE 1 - teal Arial text */
+        .para-one {
+            font-family: Arial, sans-serif;
+            color: #008b8b;
+            font-size: 18px;
+        }
+
+        /* PARAGRAPH STYLE 2 - bold navy serif text, slightly larger */
+        .para-two {
+            font-family: Georgia, serif;
+            color: #000080;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* PARAGRAPH STYLE 3 - crimson typewriter text on a highlighted box */
+        .para-three {
+            font-family: 'Courier New', monospace;
+            color: #dc143c;
+            background-color: #fff0f3;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Styling for the bulleted list items */
+        ul {
+            font-family: Verdana, sans-serif;
+            color: #4b0082;
+            line-height: 1.8;
+        }
+
+        /* TABLE SECTION - borders, spacing, and colors for the stats table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        /* Shared border and padding for header cells and data cells */
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* The top row of the table */
+        th {
+            background-color: #20b2aa;
+            color: white;
+        }
+
+        /* Shade every other row so the table is easier to read */
+        tr:nth-child(even) {
+            background-color: #e0f2f1;
+        }
+
+        /* Keep the story image from getting too large on the screen */
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #333;
+        }
     </style>
 </head>
-<body>
-    <header>
 
+<body>
+    <!-- ===== HEADER SECTION: navigation menu plus the page heading ===== -->
+    <header>
+        <!-- Navigation menu - relative links to the other pages, separated by <br> tags -->
         <nav>
-            <a href="page2.html">Back to page 2</a>
-            <a href ="index.html">Back to Home</a>
+            <a href="index.html">Back to Home</a><br>
+            <a href="page2.html">Back to Page 2</a><br>
+            <a href="page3.html">Page 3</a>
         </nav>
-        <h1 style="color:aquamarine" >Welcome to page 3</h1>
-        <p>So u made it past the dragon i see so now you have to face the final boss! its a math problem thats never been solve if you solve it you can take down the wbesite if not youll be trapped hre forvere here you go.</p>
-        <img src="math.png"
+
+        <!-- Main heading for this page -->
+        <h1>Welcome to Page 3</h1>
     </header>
-    
+
+    <!-- ===== MAIN CONTENT: three story paragraphs, a bulleted list, a table, and the image ===== -->
+    <main>
+        <!-- First paragraph - styled with the teal Arial style -->
+        <p class="para-one">So you made it past the dragon, I see. Now you have to face the final boss!
+        It's a math problem that has never been solved. If you solve it you can take down the website.
+        If not, you'll be trapped here forever. Here you go.</p>
+
+        <!-- Second paragraph - styled with the bold navy serif style -->
+        <p class="para-two">Nobody has ever beaten this one. Three mathematicians looked at it, went
+        very quiet, and then moved to the countryside to farm goats. That is the effect this problem
+        has on people.</p>
+
+        <!-- Third paragraph - styled with the crimson typewriter style -->
+        <p class="para-three">You get one attempt. There is no going back, there is no hint button, and
+        your stick from Page 2 will absolutely not help you here. Take a deep breath and scroll down.</p>
+
+        <!-- ===== BULLETED LIST SECTION: the rules of the final battle ===== -->
+        <h2>Rules of the Final Battle</h2>
+        <ul>
+            <li>You may not use a calculator, an abacus, or your fingers.</li>
+            <li>You get exactly one attempt at the answer.</li>
+            <li>Guessing "42" does not count and the boss will know.</li>
+            <li>You are not allowed to close the browser tab to escape.</li>
+            <li>If you win, the entire website shuts down permanently.</li>
+        </ul>
+
+        <!-- ===== TABLE SECTION: stats comparing every enemy in the story ===== -->
+        <h2>Enemy Stats</h2>
+        <table>
+            <!-- Top row of the table with the column titles -->
+            <tr>
+                <th>Enemy</th>
+                <th>Location</th>
+                <th>Difficulty</th>
+                <th>Weakness</th>
+            </tr>
+            <!-- One row for each enemy the player meets in the story -->
+            <tr>
+                <td>The Massive Hole</td>
+                <td>Home Page</td>
+                <td>Easy</td>
+                <td>Jumping</td>
+            </tr>
+            <tr>
+                <td>Gerald the Dragon</td>
+                <td>Page 2</td>
+                <td>Hard</td>
+                <td>One damp stick</td>
+            </tr>
+            <tr>
+                <td>The Math Problem</td>
+                <td>Page 3</td>
+                <td>Impossible</td>
+                <td>Unknown</td>
+            </tr>
+        </table>
+
+        <!-- Story image for this page - the unsolved math problem -->
+        <img src="math.png" alt="The unsolved math problem that is the final boss">
+    </main>
 </body>
 </html>

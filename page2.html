@@ -1,37 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ===== PAGE INFORMATION: character set, mobile scaling, and browser tab title ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to page 2</title>
+    <title>Page 2 - The Dragon</title>
+
+    <!-- ===== STYLE SECTION: all the CSS rules that control how this page looks ===== -->
     <style>
-    body {
-        font-family: 'times new roman', sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: #f0f0f0;
-        padding: 20px;
-        text-align: center;
-    }
-    nav {
-        margin-bottom: 20px;
-    }
+        /* Base look of the whole page */
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+        }
+
+        /* The header bar that holds the navigation and the main title */
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Spacing under the navigation menu */
+        nav {
+            margin-bottom: 20px;
+        }
+
+        /* How each navigation link looks */
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Turn the link a different color when the mouse hovers over it */
+        nav a:hover {
+            color: #cc0000;
+            text-decoration: underline;
+        }
+
+        /* The main content area below the header */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* PARAGRAPH STYLE 1 - red Times New Roman text */
+        .para-one {
+            font-family: 'Times New Roman', serif;
+            color: red;
+            font-size: 18px;
+        }
+
+        /* PARAGRAPH STYLE 2 - bold purple text with wide letter spacing */
+        .para-two {
+            font-family: Verdana, sans-serif;
+            color: #6a0dad;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        /* PARAGRAPH STYLE 3 - orange italic text with a left border bar */
+        .para-three {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #d2691e;
+            font-style: italic;
+            font-size: 19px;
+            border-left: 5px solid #d2691e;
+            padding-left: 12px;
+        }
+
+        /* Keep the story image from getting too large on the screen */
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #333;
+        }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to page 2</title>
 </head>
+
 <body>
+    <!-- ===== HEADER SECTION: navigation menu plus the page heading ===== -->
     <header>
+        <!-- Navigation menu - relative links to the other pages, separated by <br> tags -->
         <nav>
-            <a href="index.html">Back to home</a>
-            <a href="page3.html">Next page</a>
+            <a href="index.html">Back to Home</a><br>
+            <a href="page2.html">Page 2</a><br>
+            <a href="page3.html">Next Page</a>
         </nav>
-    <h1>Welcome to page 2</h1>
-    <p style = "color: red">So this is page 2 of my story so now we jump over the hole im surpised you made it there but now you have to beat the dragon that shoot fire you only have a stick so good luck!</p>
-    <img src="dragon.png">
+
+        <!-- Main heading for this page -->
+        <h1>Welcome to Page 2</h1>
     </header>
+
+    <!-- ===== MAIN CONTENT: the three story paragraphs and the image ===== -->
+    <main>
+        <!-- First paragraph - styled with the red Times New Roman style -->
+        <p class="para-one">So this is Page 2 of my story. Now we jump over the hole. I'm surprised you
+        made it this far, but now you have to beat the dragon that shoots fire. You only have a stick,
+        so good luck!</p>
+
+        <!-- Second paragraph - styled with the bold purple spaced-out style -->
+        <p class="para-two">The dragon's name is Gerald. He has been guarding this path for six hundred
+        years and he is extremely bored, which somehow makes him more dangerous, not less. He has burned
+        down four villages purely out of boredom.</p>
+
+        <!-- Third paragraph - styled with the orange italic style -->
+        <p class="para-three">Your stick is roughly two feet long and slightly damp. This is not ideal
+        against a fire-breathing lizard the size of a bus, but I believe in you. Sort of. Head to Page 3
+        when you are done, assuming you are still alive.</p>
+
+        <!-- Story image for this page -->
+        <img src="dragon.png" alt="A fire-breathing dragon guarding the path">
+    </main>
 </body>
 </html>

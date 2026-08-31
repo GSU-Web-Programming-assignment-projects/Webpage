@@ -1,45 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: #f0f0f0;
-        padding: 20px;
-        text-align: center;
-    }
-    nav {
-        margin-bottom: 20px;
-    }
-    nav a {
-        margin-right: 10px;
-        text-decoration: none;
-        color: #333;
-    }
-    </style>
+    <!-- ===== PAGE INFORMATION: character set, mobile scaling, and browser tab title ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage</title>
-    </style>
+    <title>Home - The Journey Begins</title>
 
+    <!-- ===== STYLE SECTION: all the CSS rules that control how this page looks ===== -->
+    <style>
+        /* Base look of the whole page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        /* The header bar that holds the navigation and the main title */
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Spacing under the navigation menu */
+        nav {
+            margin-bottom: 20px;
+        }
+
+        /* How each navigation link looks */
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Turn the link a different color when the mouse hovers over it */
+        nav a:hover {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        /* The main content area below the header */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* PARAGRAPH STYLE 1 - blue Arial text */
+        .para-one {
+            font-family: Arial, sans-serif;
+            color: #1a3d7c;
+            font-size: 18px;
+        }
+
+        /* PARAGRAPH STYLE 2 - dark red italic serif text */
+        .para-two {
+            font-family: Georgia, serif;
+            color: #8b0000;
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        /* PARAGRAPH STYLE 3 - green typewriter text on a highlighted box */
+        .para-three {
+            font-family: 'Courier New', monospace;
+            color: #006400;
+            background-color: #e8f5e9;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* Keep the story image from getting too large on the screen */
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #333;
+        }
+    </style>
 </head>
- 
+
 <body>
-    <!-- navigation menu -->
+    <!-- ===== HEADER SECTION: navigation menu plus the page heading ===== -->
     <header>
+        <!-- Navigation menu - relative links to the other pages, separated by <br> tags -->
         <nav>
-            <a href="index.html">Home</a>
-            <a href ="page2.html">Page 2</a>
+            <a href="index.html">Home</a><br>
+            <a href="page2.html">Page 2</a><br>
             <a href="page3.html">Page 3</a>
         </nav>
+
+        <!-- Main heading for this page -->
         <h1>Welcome to my homepage!</h1>
-        <p> So this is where you start your journey please dont fall down the massive hole i left there its wasnt meant to be there but ehhhh.</p>
-        <img src="big-hole.png">
     </header>
-    
+
+    <!-- ===== MAIN CONTENT: the three story paragraphs and the image ===== -->
+    <main>
+        <!-- First paragraph - styled with the blue Arial style -->
+        <p class="para-one">So this is where you start your journey. Please don't fall down the massive
+        hole I left there. It wasn't meant to be there, but ehhhh, it is now, so watch your step.</p>
+
+        <!-- Second paragraph - styled with the dark red italic serif style -->
+        <p class="para-two">The hole is deeper than it looks. People have thrown rocks in and never heard
+        them land. One guy threw in a whole sandwich just to see what would happen and honestly we are
+        still waiting on that one.</p>
+
+        <!-- Third paragraph - styled with the green typewriter style -->
+        <p class="para-three">If you make it past the hole, head to Page 2. There is a dragon there and
+        all I could give you is a stick. Good luck, adventurer. You are going to need a lot of it.</p>
+
+        <!-- Story image for this page -->
+        <img src="big-hole.png" alt="A massive hole in the ground blocking the path">
+    </main>
 </body>
 </html>
